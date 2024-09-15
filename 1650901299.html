@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothing, Shoes & Accessories</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .header {
+            background-color: #C9C0BB;
+            color: #fff;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid #C9C0BB;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .logo {
+            flex: 0 0 auto;
+        }
+        .logo img {
+            width: 40px; 
+            height: 40px; 
+            border-radius: 50%; 
+            object-fit: cover; 
+        }
+        .nav-container {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+        }
+        .nav-container nav {
+            display: flex;
+            gap: 10px;
+        }
+        .nav-container a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            border-radius: 4px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .nav-container a:hover {
+            background-color: #555;
+        }
+        .nav-container .active {
+            background-color: #fff;
+            color: #333;
+        }
+        .search-login {
+            display: flex;
+            align-items: center;
+        }
+        .search {
+            padding: 5px;
+            font-size: 1em;
+            border-radius: 4px;
+            border: none;
+            margin-right: 10px;
+            width: 200px; 
+            margin: 10;
+        }
+        .login-button {
+            padding: 10px 20px;
+            background-color: #fff;
+            color: #333;
+            text-decoration: none;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .login-button:hover {
+            background-color: #ddd;
+        }
+        .title {
+            text-align: center;
+            padding: 100px 15px;
+            background: #fff;
+            border-bottom: 1px solid #ffffff;
+            margin-bottom: 10px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .title h1 {
+            margin: 0;
+            font-size: 5em;
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .item {
+            flex: 1;
+            min-width: 220px;
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            overflow: hidden;
+        
+        }
+        .item a {
+            display: block;
+            text-decoration: none;
+            color: inherit;
+
+        }
+        .item img {
+            width: 125%;
+            height: auto;
+        }
+        .item h3 {
+            margin: 10px;
+            font-size: 1.2em;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .item p {
+            margin: 10px;
+            color: #555;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="https://i.pinimg.com/236x/70/e8/e9/70e8e965d12f10687317134719f36e05.jpg" alt="Logo"> <!-- Replace with your logo image -->
+        </div>
+        <div class="nav-container">
+            <nav>
+                <a href="#" class="active">Home</a>
+                <a href="#">Men</a>
+                <a href="#">Women</a>
+                <a href="#">Kids</a>
+                <a href="#">Sale</a>
+            </nav>
+        </div>
+        <div class="search-login">
+            <input type="text" class="search" placeholder="Search...">
+            <a href="#" class="login-button">Login</a>
+        </div>
+    </div>
+    <div class="title">
+        <h1>Clothing, Shoes & Accessories</h1>
+    </div>
+    <div class="container">
+        <div class="item">
+            <a href="https://wearoldmoney.com/?srsltid=AfmBOop7I2N-1_1FC-pcJ1bVHTdUorwX8S-fIs6zNe6y8G7Zt_l8Ki_w">
+                <img src="https://warpingtheories.com/cdn/shop/files/WT-8thMarch20240500.jpg?v=1711088816&width=1946" alt="Clothing">
+                <h3>Old Money Style clothes</h3>
+                <p>Old Money Style is all about quality, including the fabric your clothes are made from.</p></a>
+        </div>
+        <div class="item">
+            <a href="https://curatedandcobkk.com/product-category/shoes/">
+                <img src="https://img.joomcdn.net/2f4a269c89f509961166e43d6aecd68aa83bbe51_original.jpeg" alt="Shoes">
+                <h3>Classic shoes</h3>
+                <p>Leather stylish shoes,Leather shoes are classic and timeless, polished look that is perfect for formal occasions and dressy outfits.</p></a>
+        </div>
+        <div class="item">
+            <a href="https://th.louisvuitton.com/tha-th/homepage">
+                <img src="https://www.thegoodtrade.com/wp-content/uploads/2024/05/minimalist-jewelry-mejuri-2-2-edited.jpeg" alt="Accessories">
+                <h3>luxury accessories</h3>
+                <p>Classic timepiece that adds sophistication to any outfit.</p></a>
+        </div>
+        <div class="item">
+            <a href="https://vintagewatchspecialist.com/collections/all-products/">
+                <img src="https://media.davidyurman.com/productsv2/T7139/T7139QMS8/T7139QMS8BRAC-onmodel.jpg" alt="Hat">
+                <h3>Vintage Watch</h3>
+                <p>Top off your look with this vintage watch, pre-owned watches older than 30 years.</p></a>
+        </div>
+    </div>
+</body>
+</html>
