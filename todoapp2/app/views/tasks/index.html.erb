@@ -1,0 +1,31 @@
+<h1>Tasks for <%= @category.name %></h1>
+
+<h2>Incomplete Tasks</h2>
+<ul>
+  <% @incomplete_tasks.each do |task| %>
+    <li>
+      <%= task.name %>
+      <%= link_to 'Mark as Complete', complete_category_task_path(@category, task), method: :patch %>
+      <%= link_to 'Delete', category_task_path(@category, task), method: :delete, data: { confirm: 'Are you sure?' } %>
+    </li>
+  <% end %>
+</ul>
+
+<h2>Completed Tasks</h2>
+<ul>
+  <% @completed_tasks.each do |task| %>
+    <li>
+      <%= task.name %> (Completed)
+      <%= link_to 'Delete', category_task_path(@category, task), method: :delete, data: { confirm: 'Are you sure?' } %>
+    </li>
+  <% end %>
+</ul>
+
+<h3>New Task</h3>
+<%= form_with model: [@category, @task], local: true do |form| %>
+  <div>
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+  <%= form.submit 'Create Task' %>
+<% end %>
